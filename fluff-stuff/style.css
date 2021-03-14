@@ -1,0 +1,343 @@
+* {
+    box-sizing: border-box;
+}  
+
+html {
+    box-sizing: border-box;
+    font-family: "Proxima Nova";
+}
+
+/* header */
+.center {
+    text-align: center;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.topnav {
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.navlink {
+    display: inline;
+}
+
+.navlink.active {
+    font-weight: bold;
+}
+
+.navlink a {
+    color:black;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navlink:hover {
+    opacity: 0.5;
+}
+
+.navlink:not(:last-child) {
+    margin-right: 242px;
+}
+
+header {
+    position: relative;
+}
+
+.cart {
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+}  
+
+.cart a{
+    color:black;
+    font-size: 24px;
+}
+
+/* main-products page*/
+.product-browsing-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3rem 5rem;
+}
+
+.box {
+    width: 322px;
+    height: 518px;
+}
+.product-box {
+    margin-top: 15px;
+    margin-bottom: 22px;
+}
+
+.product-box-hover:hover {
+    opacity: 0.7;
+}
+
+.product-name {
+    font-size: 24px;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    float: right;
+}
+
+.product-color {
+    border-radius: 100px;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    margin-top: 8px;
+}
+
+.product-pattern-material {
+    font-size: 18px;
+    opacity: 40%;
+    margin-top: 8px;
+}
+
+/* footer */
+
+.footer-margin {
+    margin-top: 43px;
+    margin-bottom: 62px;
+}
+
+
+/* home page*/
+/* home brand section*/
+.box-brand{
+    width: 1400px;
+    height: 300px;;
+    margin-top: 19px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.brand-image {
+    float:left;
+    margin-right: 12px;
+}
+
+.brand-content {
+    width: 15vw;
+    margin: 1rem;
+}
+
+.brand-button{
+    font-size: 18px;
+    background-color: white;
+    padding: 18px 62px;
+    border-radius: 2px;
+    font-family: inherit;
+}
+
+.brand-button:hover{
+    background-color: #FC8C3A;
+    border: none;
+    border-radius: 2px;
+    color:white;
+}
+
+/* home material section*/
+.box-material{
+    width: 1222px;
+    height: 550px;
+    margin-top: 33px;
+    margin-bottom: 58px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 16px rgba(118, 124, 186, 8%);
+    border-radius: 33px;
+    padding: 3rem 0;
+}
+
+.all-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3rem 5rem;
+}
+
+h1 {
+    display: block;
+    margin-left: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.materials-card {
+    width: 287px;
+    height: 360px;
+}
+
+.material-title {
+    font-size: 24px;
+}
+
+.material-description {
+    font-size: 14px;
+}
+
+/* home workshop section*/
+.box-workshop {
+    width: 1030px;
+    height: 573px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.workshop-description {
+    float:left;
+    width: 25vw;
+    padding: 1rem;
+}
+
+.img-position{
+    width: 50vw;
+    padding: 1rem;
+}
+
+.icon-position {
+    position: absolute;
+    right: 4rem;
+    bottom: auto; 
+}
+
+
+/* product detail page */
+/* product detail */
+.box-product {
+    /* width: 1600px;
+    height: 3000px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3rem 5rem;
+}
+
+/* left fixed product description */
+.box-product-detail {
+    position: static;
+    left: 6rem;
+    width: 20vw;
+    margin-right: 5vw;
+}
+
+.product {
+    font-size: 24px;
+}
+
+.product-detail {
+    font-size: 14px;
+}
+
+.rating {
+    width: 20vw;
+}
+
+.comments {
+    width: 20vw;
+}
+
+.arrow-down {
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    margin: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.saved-design {
+    margin-top: 1rem;
+}
+
+/* center scrollable product image */
+.box-product-image {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* right fixed product attribute */
+.box-product-attributes {
+    position: static;
+    width: 20vw;
+    margin-left: 5vw;
+}
+
+.select {
+    font-size: 14px;
+    color: #FC8C3A;
+}
+
+.drop-down {
+    font-size: 18px;
+    background-color: white;
+    padding: 18px 62px;
+    border-radius: 2px;
+    font-family: inherit;
+    margin-top: 1rem;
+    width: 20vw;
+}
+
+.checkout-button {
+    font-size: 24px;
+    background-color: #343434;
+    color: white;
+    padding: 18px 62px;
+    border-radius: 2px;
+    font-family: inherit;
+    margin-top: 2rem; 
+    width: 20vw;
+}
+
+.checkout-button:hover{
+    background-color: white;
+    border-radius: 2px;
+    color:black;
+}
+
+/* .select-material {
+    border-radius: 2px;
+    height: 60px;
+    width: 300px;
+    background-color: white;
+    border-color: black;
+    border-
+} */
+
+
+
+/* similar design */
+.box-similar {
+    text-align:center;
+}
+
+
+.image-margin:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.image-margin {
+    margin-bottom: 3rem;
+}
