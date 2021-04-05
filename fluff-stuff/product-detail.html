@@ -22,7 +22,7 @@
             </ul>
         </div>
         <div class="cart">
-            <a href="#">Cart(0)</a>
+            <a href="#">Cart(<span id="amountDisplay">0</span>)</a>
         </div>
     </header>
 
@@ -56,7 +56,7 @@
 
             <!--right fixed product attributes-->
             <div class="box-product-attributes">
-                <p class="product">$40+</p>
+                <p class="product">$40</p>
                 <p class="select">select a color</p>
                 <div>
                     <button class="product-color" type="button" style="background-color:#E3BD63;"></button>
@@ -65,13 +65,23 @@
                     <button class="product-color" type="button" style="background-color:#CEC7B5;"></button>
                 </div>
                 <p class="select">select a pattern</p>
-                <div>
-                    <img src="img/pattern_1.png" alt="pattern_1">
-                    <img src="img/pattern_2.png" alt="pattern_2">
-                    <img src="img/pattern_3.png" alt="pattern_3">
+                <div class="pattern img-1">
+                    <!-- <img src="img/pattern_1.png" alt="pattern_1"> -->
                 </div>
-                <button class="drop-down" type="button">Select a material <span class="arrow-down"></span></button>
-                <button class="drop-down" type="button">Amount <span class="arrow-down"></span></button>
+                <div class="pattern img-2">
+                    <!-- <img src="img/pattern_2.png" alt="pattern_2"> -->
+                </div>
+                <div class="pattern img-3">
+                    <!-- <img src="img/pattern_3.png" alt="pattern_3"> -->
+                </div>
+                <!-- <div onclick="myFunction()" class="drop-down">Select a material <span class="arrow-down"></span> -->
+                    <select class="dropdown-content" id="myDropdown">
+                        <option value="0">Feather</a>
+                        <option value="1">Cotton</a>
+                        <option value="2">Foam</a>
+                    </select>
+                <!-- </div> -->
+                <!-- <input class="drop-down" type="text">Amount</button> -->
                 <!-- <div class="select-material">
                     <p>Select a material</p>
                     <img src="img/info_icon.png" alt="info_icon">
@@ -80,7 +90,19 @@
                 <!-- <div class="amount">
                     <p>Amount</p>
                 </div> -->
-                <button class="checkout-button" type="button">Add to cart</button>
+                <select class="dropdown-content" id="myDropdown">
+                    <option value="0">0</a>
+                    <option value="1">1</a>
+                    <option value="2">2</a>
+                    <option value="3">3</a>
+                    <option value="4">4</a>
+                    <option value="5">5</a>
+                    <option value="6">6</a>
+                    <option value="7">7</a>
+                    <option value="8">8</a>
+                    <option value="9">9</a>
+                </select>
+                <button class="checkout-button" id="checkoutButton" type="button">Add to cart</button>
             </div>
         </div>
 
@@ -91,6 +113,8 @@
             <img src="img/Similar_2.png" alt="Similar_2" class="image-margin">
             <img src="img/Similar_3.png" alt="Similar_3" class="image-margin">
         </div>
+
+        
 
 
         <!-- <!DOCTYPE html>
@@ -132,5 +156,7 @@
         <hr style="border-color:#a3b1b9;">
         <div class="footer-margin">Address: 5000 Forbes Ave, Pittsburgh, PA 15213<br>Phone: (412) 268-2000</div>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
